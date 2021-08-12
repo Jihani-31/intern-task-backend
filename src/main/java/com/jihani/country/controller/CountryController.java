@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/rest/v2")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CountryController {
     @Autowired
     CountryService countryService;
